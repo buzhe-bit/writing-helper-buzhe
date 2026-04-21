@@ -16,6 +16,7 @@ Use this for:
 - Rough drafts from notes, voice dumps, Get-cleaned drafts, AI first drafts, or second drafts
 - WeChat viewpoint articles and Xiaohongshu experience/conversion posts
 - Benchmark article analysis or self-sample review
+- Drafts that need stronger support from data, cases, book quotes, or original source passages
 
 ## First Decision: Scene Mode
 
@@ -37,9 +38,10 @@ Do not jump straight into a polished article unless the user explicitly asks for
 2. Identify platform and scene: WeChat, Xiaohongshu sharing, Xiaohongshu conversion, or analysis.
 3. Diagnose first: core claim, strongest seeds, unclear thinking, missing support, structural drift.
 4. Rebuild outline before full rewriting when the draft is unstable.
-5. Clarify only high-impact gaps; prefer safe assumptions over excessive questioning.
-6. Write one mother draft before multi-platform adaptation.
-7. Capture repeated corrections as style-memory candidates.
+5. Decide support type: personal detail, public data/case, book quote, or original source passage.
+6. Clarify only high-impact gaps; prefer safe assumptions over excessive questioning.
+7. Write one mother draft before multi-platform adaptation.
+8. Capture repeated corrections as style-memory candidates.
 
 ## Diagnosis Checklist
 
@@ -52,7 +54,7 @@ For every draft, look for:
 - Structure issue: repetition, loose order, multiple main topics
 - Support needed: data, cases, book quotes, personal examples, or clearer reasoning
 
-If book quotes are needed, use `book-quote-skill` instead of inventing authority.
+If book quotes or original passages are needed, use `quote-support-guide.md` and `book-quote-skill` instead of inventing authority.
 
 ## Platform Rules
 
@@ -88,6 +90,17 @@ Output:
 
 For the full guide, read `benchmark-analysis-guide.md`.
 
+## Quote And Evidence Support
+
+When a draft has a claim that feels true but unsupported, decide what kind of support it needs:
+
+- Personal detail: use the author's own experience
+- Public data/case: search current facts and cite source
+- Book quote/original passage: use `book-quote-skill`
+- Clearer reasoning: rewrite the logic instead of adding decoration
+
+For full rules, read `quote-support-guide.md`.
+
 ## Style Memory
 
 Use `style-profile-memory.md` when writing in the user's voice, especially for Xiaohongshu. Current stable rule: sharing posts preserve realness, personal texture, concrete details, and human warmth; conversion rules must not leak into sharing posts.
@@ -106,6 +119,7 @@ When the user says "this is not me" or repeats the same correction, record it as
 
 - `style-profile-memory.md`: confirmed user style and scene preferences
 - `benchmark-analysis-guide.md`: how to analyze admired and self-written articles
+- `quote-support-guide.md`: how to decide when and how to use quotes/source passages
 - `case-study-ai-opportunity.md`: example of moving from raw idea to structured article
 - `red-test-pack-ai-opportunity.md`: test pack for failure modes
 - `red-phase-runbook.md`: verification method for future revisions
